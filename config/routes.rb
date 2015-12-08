@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   root to: 'contacts#index'
   get '/contacts' =>'contacts#index'
-  get '/contacts/new' =>'contacts#new'
+  get '/contacts/new' =>'contacts#new', as: :new 
   post '/contacts' =>'contacts#create'
 end
