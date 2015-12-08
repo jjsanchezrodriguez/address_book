@@ -5,7 +5,7 @@ class ContactsController < ApplicationController
   end
 
   def show
-    @proyects = Proyect.find(params[:id])
+    @contacts = Contact.find(params[:id])
     rescue ActiveRecord::RecordNotFound
       render 'no_proyect_found'
   end
